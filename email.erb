@@ -9,8 +9,12 @@
   <p>Hi John Doe, I hope you had a pleasant weekend.</p>
 
   <p>I did my analysis and this is what the data tells us:
-     - send mobile alerts at these hours: <%=freq_hour_registered%>
-     - increase marketing on: <%=freq_wkday_registered%>
+     <% if freq_hour_registered.length == 1 %> 
+       - send mobile alerts at this hour: <%=freq_hour_registered.join(', ')%>
+    <% else %>
+       send mobile alerts at these hours: <%=freq_hour_registered.join(', ')%>
+    <% end %>
+       and increase marketing on: <%=freq_wkday_registered%>.
   </p>
   <p>Please reach out to me if you need any additional information. 
      I'll be happy to send my analysis to the marketing department.
