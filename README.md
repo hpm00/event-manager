@@ -13,5 +13,7 @@ Learning goals:
   - use ERB (Embedded Ruby) for templating "
   
   Assignment #1: clean phone numbers
+  
   Assignment #2: identify frequent registration hours
+  
   Assignment #3: identify frequent registration weekdays 
